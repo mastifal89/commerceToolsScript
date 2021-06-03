@@ -1,0 +1,47 @@
+{
+  "name": "commerce-tools-script-template",
+  "version": "1.0.0",
+  "description": "A template to write scripts that need commerce tools",
+  "main": "search.js",
+  "scripts": {
+    "copy_config": "cp -r src/config/env dist/config/env",
+    "babel": "babel src -d dist",
+    "clean": "rm -rf dist",
+    "build": "npm run clean && npm run babel && npm run copy_config",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cross-env NODE_ENV=development npm run build && node dist/index.js",
+    "prod": "cross-env NODE_ENV=production npm run start"
+  },
+  "keywords": [
+    "template",
+    "commerce tools"
+  ],
+  "author": "Devgurus.io",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.51",
+    "@babel/core": "^7.0.0-beta.51",
+    "@babel/preset-env": "^7.0.0-beta.51",
+    "eslint": "^5.0.1",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jest": "^21.17.0"
+  },
+  "dependencies": {
+    "@commercetools/api-request-builder": "^3.8.0",
+    "@commercetools/importapi-sdk": "^1.13.0",
+    "@commercetools/ml-sdk": "^1.13.0",
+    "@commercetools/platform-sdk": "^1.13.0",
+    "@commercetools/sdk-client": "^1.5.7",
+    "@commercetools/sdk-middleware-auth": "^4.0.0",
+    "@commercetools/sdk-middleware-http": "^4.0.0",
+    "@commercetools/sdk-middleware-queue": "^1.1.6",
+    "bluebird": "^3.5.1",
+    "cross-env": "^5.2.0",
+    "install": "^0.13.0",
+    "nconf": "^0.10.0",
+    "node-fetch": "^2.1.2",
+    "npm": "^7.14.0",
+    "winston": "^3.0.0",
+    "yargs": "^17.0.1"
+  }
+}

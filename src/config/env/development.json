@@ -1,0 +1,11 @@
+{
+  "STRIPE":  {
+    "KEY":""
+  },
+  "braintree": {
+    "environment": "",
+    "merchantId": "",
+    "publicKey": "",
+    "privateKey": ""
+  }
+}

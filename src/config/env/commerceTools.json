@@ -1,0 +1,10 @@
+{
+    "COMMERCE_TOOLS": {
+        "CLIENT_ID": "Bqis0Wx8dmSzz5w7BxLpUUIK",
+        "CLIENT_SECRET": "woeVKxxnBYoscqH5EHJDk_EaXWMiTuf3",
+        "PROJECT_KEY": "holasoycara89",
+        "API_HOST": "https://api.us-central1.gcp.commercetools.com",
+        "OAUTH_URL": "https://auth.us-central1.gcp.commercetools.com",
+        "CONCURRENCY": "10"
+    }
+}
